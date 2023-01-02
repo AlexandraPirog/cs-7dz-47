@@ -31,7 +31,7 @@ void FillArrayWithRandomNumbers(double[,] arr)
     {
         for (int j = 0; j < arr.GetLength(1); j++)
         {
-            arr[i, j] = Convert.ToDouble(new Random().Next(-100, 100));
+            arr[i, j] = new Random().NextDouble();
             System.Console.Write(arr[i, j] + " ");
         }
         System.Console.WriteLine();
